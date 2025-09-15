@@ -7,7 +7,7 @@ import joblib
 # Use cache to load model only once
 @st.cache_resource
 def load_model():
-    model = joblib.load('stacking_model.joblib')
+    model = joblib.load('xgbr_model.joblib')
     encoders = joblib.load('label_encoders.joblib')
     return model, encoders
 
